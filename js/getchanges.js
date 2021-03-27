@@ -1,3 +1,71 @@
+$.ajax({
+		url: 'https://api.github.com/repos/MalikSteam/account_public/commits',
+		dataType: 'jsonp',
+		success: function(data){
+			console.log(data.data[0].parents[0].sha);
+			$.ajax({
+				url: 'https://api.github.com/repos/MalikSteam/account_public/commits/'+data.data[0].parents[0].sha,
+				dataType: 'jsonp',
+				success: function(data){
+					console.log(data.data.files[0].patch);
+					$( ".commit_0" ).append( "<h1>" +data.data.files[0].filename+ "</h1><pre>" + data.data.files[0].patch + "<pre>" );
+				}
+			});
+		}
+	});
+	
+$.ajax({
+	url: 'https://api.github.com/repos/MalikSteam/account_public/commits',
+	dataType: 'jsonp',
+	success: function(data){
+		console.log(data.data[0].parents[0].sha);
+		$.ajax({
+			url: 'https://api.github.com/repos/MalikSteam/account_public/commits/'+data.data[1].parents[0].sha,
+			dataType: 'jsonp',
+			success: function(data){
+				console.log(data.data.files[0].patch);
+				$( ".commit_1" ).append( "<h1>" +data.data.files[0].filename+ "</h1><pre>" + data.data.files[0].patch + "<pre>" );
+			}
+		});
+	}
+});
+
+$.ajax({
+	url: 'https://api.github.com/repos/MalikSteam/account_public/commits',
+	dataType: 'jsonp',
+	success: function(data){
+		console.log(data.data[0].parents[0].sha);
+		$.ajax({
+			url: 'https://api.github.com/repos/MalikSteam/account_public/commits/'+data.data[2].parents[0].sha,
+			dataType: 'jsonp',
+			success: function(data){
+				console.log(data.data.files[0].patch);
+				$( ".commit_2" ).append( "<h1>" +data.data.files[0].filename+ "</h1><pre>" + data.data.files[0].patch + "<pre>" );
+			}
+		});
+	}
+});
+
+$.ajax({
+	url: 'https://api.github.com/repos/MalikSteam/account_public/commits',
+	dataType: 'jsonp',
+	success: function(data){
+		console.log(data.data[0].parents[0].sha);
+		$.ajax({
+			url: 'https://api.github.com/repos/MalikSteam/account_public/commits/'+data.data[3].parents[0].sha,
+			dataType: 'jsonp',
+			success: function(data){
+				console.log(data.data.files[0].patch);
+				$( ".commit_3" ).append( "<h1>" +data.data.files[0].filename+ "</h1><pre>" + data.data.files[0].patch + "<pre>" );
+			}
+		});
+	}
+});
+
+
+
+
+/*
 jQuery.get( "https://api.github.com/repos/MalikSteam/account_public/commits", function( data ) {
 	jQuery.get( "https://api.github.com/repos/MalikSteam/account_public/commits/" + data[0].parents[0].sha, function( data ) {
 		//console.log(data);
@@ -21,6 +89,7 @@ jQuery.get( "https://api.github.com/repos/MalikSteam/account_public/commits", fu
 		$( ".commit_3" ).append( "<h1>" +data.files[0].filename+ "</h1><pre>" + data.files[0].patch + "<pre>" );
 	});
 });
+*/
 /*
 {
 	"sha": "dd84d9c279b955ea3a9d26b37e1f7bba7f3bd0ea",
