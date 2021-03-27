@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- https://www.w3schools.com/bootstrap4/ -->
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+	<!-- put into a nav file -->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	   <a class="navbar-brand" href="#">
+		<img class="gpsjson_avatar" src="" alt="Logo" style="width:40px;">
+	  </a>
+	  <ul class="navbar-nav">
+		<li class="nav-item active">
+		  <a class="nav-link" href="#">Home</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="https://github.com/MalikSteam/account_public">Github</a>
+		</li>
+	  </ul>
+	</nav>
+
+	<div class="container-fluid mt-3">
+
+	  <div class="row">
+		<div class="col-sm-3">
+			<div class="card">
+				<img class="gpsjson_avatarfull card-img-top" src="" alt="Card image">
+				<div class="card-body">
+				  <h4 class="gpsjson_personaname card-title"></h4>
+				  <p class="card-text"></p>
+				  <a href="#" class="gpsjson_profileurl btn btn-primary">Steam Profile</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-9" style="background-color:lavenderblush;">
+			
+			<div class="card-columns mt-3">
+			  <div class="card bg-primary">
+				<div class="card-body text-center">
+				  <p class="gamescount_GetOwnedGames card-text"></p>
+				</div>
+			  </div>
+			  <div class="card bg-warning">
+				<div class="card-body text-center">
+				  <p class="gamescount_userdata_apps card-text"></p>
+				</div>
+			  </div>
+			  <div class="card bg-success">
+				<div class="card-body text-center">
+				  <p class="gamescount_GetOwnedApps card-text"></p>
+				</div>
+			  </div>
+			  <div class="card bg-primary">
+				<div class="card-body text-center">
+				  <p class="gamescount_userdata_packages card-text"></p>
+				</div>
+			  </div>
+			  <div class="card bg-warning">
+				<div class="card-body text-center">
+				  <p class="gpsjson_timecreated card-text"></p>
+				</div>
+			  </div>
+			  <div class="card bg-success">
+				<div class="card-body text-center">
+				  <p class="gamescount_blank card-text"></p>
+				</div>
+			  </div>
+			</div>
+
+		</div>
+	  </div>
+	</div>
+	
+	<div class="container-fluid mt-3" style="background-color:LightSlateGray;">
+		<div class="row">
+		  <div class="commit_0 col"></div>
+		  <div class="commit_1 col"></div>
+		</div>
+		
+		<div class="row">
+		  <div class="commit_2 col"></div>
+		  <div class="commit_3 col"></div>
+		</div>
+	</div>
+	
+	<div class="container-fluid mt-3">
+		<div class="row">
+		<div class="col-sm-6">
+			<table id="example_table" class="table table-striped table-bordered">
+			<thead>
+			<tr>
+				<th>appid</th>
+				<th>name</th>
+			</tr>
+			</thead>
+			<tbody class="goajson_appid_name">
+			
+			</tbody>
+			</table>
+		</div>
+		
+		<div class="col-sm-6">
+			<table id="example_table2" class="table table-striped table-bordered">
+			<thead>
+			<tr>
+				<th>appid</th>
+				<th>name</th>
+			</tr>
+			</thead>
+			<tbody class="goajson_appid_name2">
+			
+			</tbody>
+			</table>
+		</div>
+		
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	<script src="./js/GetOwnedGames.js"></script>
+	<script src="./js/GetPlayerSummaries.js"></script>
+	<script src="./js/GetOwnedApps.js"></script>
+	<script src="./js/userdata.js"></script>	
+	<script src="./js/getChanges.js"></script>
+	
+	<!-- jQuery Datatable js --><script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+	<!-- Bootstrap Datatable js --><script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+</body>
+
+</html>
