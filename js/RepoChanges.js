@@ -14,21 +14,23 @@ $.ajax({
 			dataType: 'jsonp',
 			success: function(data){
 				console.log(data.data.files[0].patch);
-				$( ".commit_0" ).append( "<h4>" +data.data.files[0].filename+ "</h4><pre>" + data.data.files[0].patch + "<pre>" );
+				$( ".commit_0" ).append( "<h4>" +data.data.files[0].filename+ '</h4><pre  style="font-size:66%;">' + data.data.files[0].patch + '<pre>' );
+
 			}
 		});
-		/*
+		
 		$.ajax({
-			url: 'https://api.github.com/repos/MalikSteam/account_public/commits/'+data.data[1].parents[0].sha,
+			url: 'https://api.github.com/repos/MalikSteam/account_public/commits/'+data.data[0].parents[0].sha,
 			//beforeSend: function (xhr) {
 			//	xhr.setRequestHeader ("Accept: application/vnd.github.v3+json");
 			//},
 			dataType: 'jsonp',
 			success: function(data){
 				console.log(data.data.files[0].patch);
-				$( ".commit_1" ).append( "<h4>" +data.data.files[0].filename+ "</h4><pre>" + data.data.files[0].patch + "<pre>" );
+				$( ".commit_1" ).append( "<h4>" +data.data.files[0].filename+ '</h4><pre  style="font-size:66%;">' + data.data.files[0].patch + '<pre>' );
 			}
 		});
+		/*
 		$.ajax({
 			url: 'https://api.github.com/repos/MalikSteam/account_public/commits/'+data.data[2].parents[0].sha,
 			//beforeSend: function (xhr) {
