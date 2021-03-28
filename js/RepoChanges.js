@@ -6,7 +6,7 @@ $.ajax({
 	dataType: 'jsonp',	
 	success: function(data){
 		$.ajax({
-			url: 'https://api.github.com/repos/MalikSteam/account_public/commits/'+data.data[0].parents[0].sha,
+			url: 'https://api.github.com/repos/MalikSteam/account_public/commits/'+data.data[0].sha,
 			//beforeSend: function (xhr) {
 			//	xhr.setRequestHeader ("Accept: application/vnd.github.v3+json");
 			//},
