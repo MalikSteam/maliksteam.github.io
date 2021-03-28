@@ -145,8 +145,8 @@
 				</tr>
 				</thead>
 				<tbody class="chatlog">
-				<!-- https://help.steampowered.com/en/accountdata/AjaxLoadMoreData/?url=GetFriendMessagesLog&continue=* -->
-				<tr><td><a target=\"_blank\" href=\"https:\/\/steamcommunity.com\/id\/MalikQayum\/\">MalikQayum<\/a><\/td><td><a target=\"_blank\" href=\"https:\/\/steamcommunity.com\/profiles\/76561197966384101\/\">PCGameit<\/a><\/td><td>Mar 28, 2021 @ 8:10pm CEST<\/td><td>I &quot;promise&quot; this is the last test.<\/td><\/tr><tr><td><a target=\"_blank\" href=\"https:\/\/steamcommunity.com\/id\/MalikQayum\/\">MalikQayum<\/a><\/td><td><a target=\"_blank\" href=\"https:\/\/steamcommunity.com\/profiles\/76561197966384101\/\">PCGameit<\/a><\/td><td>Mar 28, 2021 @ 8:05pm CEST<\/td><td>let's try if this breaks!<\/td><\/tr><tr><td><a target=\"_blank\" href=\"https:\/\/steamcommunity.com\/id\/MalikQayum\/\">MalikQayum<\/a><\/td><td><a target=\"_blank\" href=\"https:\/\/steamcommunity.com\/profiles\/76561197966384101\/\">PCGameit<\/a><\/td><td>Mar 28, 2021 @ 7:57pm CEST<\/td><td>account_public test<\/td><\/tr>
+				
+				
 				
 				</tbody>
 				</table>
@@ -192,6 +192,12 @@
 	
 	<!-- jQuery Datatable js --><script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 	<!-- Bootstrap Datatable js --><script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+	
+	<script>
+	//https://help.steampowered.com/en/accountdata/AjaxLoadMoreData/?url=GetFriendMessagesLog&continue=*
+	var chatlog = unescape("<tr><td><a target=\"_blank\" href=\"https:\/\/steamcommunity.com\/id\/MalikQayum\/\">MalikQayum<\/a><\/td><td><a target=\"_blank\" href=\"https:\/\/steamcommunity.com\/profiles\/76561197966384101\/\">PCGameit<\/a><\/td><td>Mar 28, 2021 @ 8:10pm CEST<\/td><td>I &quot;promise&quot; this is the last test.<\/td><\/tr><tr><td><a target=\"_blank\" href=\"https:\/\/steamcommunity.com\/id\/MalikQayum\/\">MalikQayum<\/a><\/td><td><a target=\"_blank\" href=\"https:\/\/steamcommunity.com\/profiles\/76561197966384101\/\">PCGameit<\/a><\/td><td>Mar 28, 2021 @ 8:05pm CEST<\/td><td>let's try if this breaks!<\/td><\/tr><tr><td><a target=\"_blank\" href=\"https:\/\/steamcommunity.com\/id\/MalikQayum\/\">MalikQayum<\/a><\/td><td><a target=\"_blank\" href=\"https:\/\/steamcommunity.com\/profiles\/76561197966384101\/\">PCGameit<\/a><\/td><td>Mar 28, 2021 @ 7:57pm CEST<\/td><td>account_public test<\/td><\/tr>");
+	$(".chatlog").append(chatlog);
+	</script>
 </body>
 
 </html>
