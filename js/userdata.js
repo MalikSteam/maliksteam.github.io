@@ -24,5 +24,6 @@ $.ajax({
 		
 		$( ".UDrgOwnedApps" ).append( rgOwnedAppsJson );
 		$('#UDrgOwnedApps_table').DataTable();
+		$("#UDrgOwnedApps_table_wrapper > div:nth-child(3) > div.col-sm-12.col-md-5").hide();
 	}
 });
