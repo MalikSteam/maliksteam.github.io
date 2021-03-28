@@ -1,7 +1,7 @@
 $.ajax({
 	url: 'https://api.github.com/repos/MalikSteam/account_public/commits',
 	beforeSend: function (xhr) {
-		xhr.setRequestHeader ("Accept: application/vnd.github.v3+json", "User-Agent: request");
+		xhr.setRequestHeader ("Accept: application/vnd.github.v3+json");
 	},
 	dataType: 'jsonp',	
 	success: function(data){
@@ -16,6 +16,7 @@ $.ajax({
 				$( ".commit_0" ).append( "<h4>" +data.data.files[0].filename+ "</h4><pre>" + data.data.files[0].patch + "<pre>" );
 			}
 		});
+		/*
 		$.ajax({
 			url: 'https://api.github.com/repos/MalikSteam/account_public/commits/'+data.data[1].parents[0].sha,
 			//beforeSend: function (xhr) {
@@ -49,6 +50,7 @@ $.ajax({
 				$( ".commit_3" ).append( "<h4>" +data.data.files[0].filename+ "</h4><pre>" + data.data.files[0].patch + "<pre>" );
 			}
 		});
+		*/
 	}
 });
 	
