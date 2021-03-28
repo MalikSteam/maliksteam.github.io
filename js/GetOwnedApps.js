@@ -16,6 +16,6 @@ $.ajax({
 		});
 		$( ".goajson_appid_name" ).append( goajson_appid_name );
 		$( ".gamescount_GetOwnedApps" ).append( "GetOwnedApps <br>" + data.length );
-		$('#example_table').DataTable();
+		$('#GetOwnedApps_table').DataTable();
 	}
 });

@@ -24,7 +24,7 @@
 	  </ul>
 	</nav>
 
-	<div class="container-fluid mt-3">
+	<div class="container mt-3">
 
 	  <div class="row">
 		<div class="col-sm-3">
@@ -76,47 +76,80 @@
 	  </div>
 	</div>
 	
-	<div class="container-fluid mt-3" style="background-color:LightSlateGray;">
+	<div class="container mt-3">
 		<div class="row">
-		  <div class="commit_0 col"></div>
-		  <div class="commit_1 col"></div>
-		</div>
-		
-		<div class="row">
-		  <div class="commit_2 col"></div>
-		  <div class="commit_3 col"></div>
-		</div>
-	</div>
-	
-	<div class="container-fluid mt-3">
-		<div class="row">
-		<div class="col-sm-6">
-			<table id="example_table" class="table table-striped table-bordered">
-			<thead>
-			<tr>
-				<th>appid</th>
-				<th>name</th>
-			</tr>
-			</thead>
-			<tbody class="goajson_appid_name">
+			<div class="col-sm-8">
 			
-			</tbody>
-			</table>
-		</div>
-		
-		<div class="col-sm-6">
-			<table id="example_table2" class="table table-striped table-bordered">
-			<thead>
-			<tr>
-				<th>appid</th>
-				<th>name</th>
-			</tr>
-			</thead>
-			<tbody class="goajson_appid_name2">
+				<div class="container">
+				  <h4>Libraries</h4>
+				  <br>
+				  <!-- Nav tabs -->
+				  <ul class="nav nav-tabs" role="tablist">
+					<li class="nav-item">
+					  <a class="nav-link active" data-toggle="tab" href="#GetOwnedGames">GetOwnedGames</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" data-toggle="tab" href="#UDOwnedApps">userdata OwnedApps</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" data-toggle="tab" href="#GetOwnedApps">GetOwnedApps</a>
+					</li>
+				  </ul>
+
+				  <!-- Tab panes -->
+				  <div class="tab-content">
+					<div id="GetOwnedGames" class="container tab-pane active"><br>
+					  <table id="GetOwnedGames_table" class="table table-striped table-bordered">
+						<thead>
+						<tr>
+							<th>appid</th>
+							<th>name</th>
+						</tr>
+						</thead>
+						<tbody class="gogjson_appid_name">
+						
+						</tbody>
+						</table>
+					</div>
+					<div id="UDOwnedApps" class="container tab-pane fade"><br>
+					  <table id="UDrgOwnedApps_table" class="table table-striped table-bordered">
+						<thead>
+						<tr>
+							<th>appid</th>
+						</tr>
+						</thead>
+						<tbody class="UDrgOwnedApps">
+						
+						</tbody>
+						</table>
+					</div>
+					<div id="GetOwnedApps" class="container tab-pane fade"><br>
+					  <table id="GetOwnedApps_table" class="table table-striped table-bordered">
+						<thead>
+						<tr>
+							<th>appid</th>
+							<th>name</th>
+						</tr>
+						</thead>
+						<tbody class="goajson_appid_name">
+						
+						</tbody>
+						</table>
+					</div>
+				  </div>
+				</div>
+			</div>
 			
-			</tbody>
-			</table>
-		</div>
+			<div class="col-sm-4">
+				<h4>Changes</h4>
+				  <br>
+				<div class="row" style="background-color:LightSlateGray;">
+				  <div class="commit_0 col"></div>
+				  <div class="commit_1 col"></div>
+				  <div class="commit_2 col"></div>
+				  <div class="commit_3 col"></div>
+				</div>
+			</div>
 		
 		</div>
 	</div>
