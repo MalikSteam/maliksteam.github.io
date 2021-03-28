@@ -18,6 +18,5 @@ $.ajax({
 		$( ".gogjson_appid_name" ).append( gogjson_appid_name );
 		$('#GetOwnedGames_table').DataTable();
 		$("#GetOwnedGames_table_wrapper > div:nth-child(3) > div.col-sm-12.col-md-5").hide();
-		
 	}
 });
