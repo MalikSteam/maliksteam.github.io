@@ -5,6 +5,7 @@ $.ajax({
 	},
 	dataType: 'jsonp',	
 	success: function(data){
+		console.log(data.data[0].sha);
 		$.ajax({
 			url: 'https://api.github.com/repos/MalikSteam/account_public/commits/'+data.data[0].sha,
 			//beforeSend: function (xhr) {
