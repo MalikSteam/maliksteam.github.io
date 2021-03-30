@@ -1,7 +1,7 @@
 # maliksteam.github.io
 [https://maliksteam.github.io/](https://maliksteam.github.io/)
 
-## https://github.com/MalikSteam/account_public
+[account_public](https://github.com/MalikSteam/account_public)
 
 #### public
 
