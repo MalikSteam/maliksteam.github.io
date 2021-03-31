@@ -9,16 +9,8 @@ $.ajax({
 	},
 	success:function(data) {
 		var data = JSON.parse( data );
-		
 		var licenses = unescape(data.html);
-		
-		
-		$("#licenses").append(licenses);
-		$(".account_table").addClass("table");
-		$(".account_table").addClass("table-striped");
-		$(".account_table").addClass("table-bordered");
-		$('.account_table').attr('id','licenses_table')
-
+		$(".licenses").append(licenses.replace(' </table>','').replace('<table class=\"account_table\"> <tr> <th class=\"license_date_col\">Date</th> <th>Item</th> <th class=\"license_acquisition_col\">Acquisition Method</th> </tr>',''));
 		$('#licenses_table').DataTable( {
 		  "ordering": false
 		} );
