@@ -26,6 +26,7 @@ $.ajax({
 	  $( ".gpsjson_profileurl" ).attr("href", gpsjson_profileurl);
 	  
 	  var gpsjson_timecreated = data.response.players[0].timecreated;
+	  gpsjson_timecreated = new Date(gpsjson_timecreated*1000);
 	  $( ".gpsjson_timecreated" ).append("timecreated:<br>" + gpsjson_timecreated);
 	  
 	  //var gpsjson_personaname = data.response.players[0].personaname;
@@ -33,7 +34,6 @@ $.ajax({
 	  
 		//"communityvisibilitystate": 3,
 		//"profilestate": 1,
-		//"personaname": "PCGameit",
 		//"commentpermission": 1,
 
 		//"personastate": 1,
