@@ -13,7 +13,10 @@ $.ajax({
 		var chatlog = unescape(data.html);
 		$(".chatlog").append(chatlog);
 		
-		$('#chatlog_table').DataTable();
+		//$('#chatlog_table').DataTable();
+		$('#chatlog_table').DataTable( {
+		  "ordering": false
+		} );
 		$("#chatlog_table_wrapper > div:nth-child(3) > div.col-sm-12.col-md-5").hide();
 	}
 });
